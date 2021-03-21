@@ -2,15 +2,6 @@
     padding-top: 10rem;
 }
 
-.login-form{
-    max-width: 600px;
-    margin: auto;
-    padding: 5rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background-color: #fff;
-    border-radius: 12px;
-}
-
 .content-header h3::after{
     content: "";
     position: relative;
@@ -23,9 +14,119 @@
     ,#2a5298,#1e3c72);
 }
 
-.login{
-    min-height: 100vh;
-    background: #1e3c72;
-    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72); 
-    background: linear-gradient(to right, #2a5298, #1e3c72); 
+.form-control {
+    border: unset !important;
+    border-radius: 0px !important;
+    background-image: linear-gradient(#1976d2, #1976d2), linear-gradient(rgba(120, 130, 140, 0.13), rgba(120, 130, 140, 0.13));
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center bottom, center calc(100% - 1px);
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 1px;
+    transition: background 0s ease-out 0s;
+}
+
+.form-control:focus{
+    background-size: 100% 2px, 100% 1px;
+    outline: 0 none;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.form-control:focus{
+    box-shadow: none !important; 
+}
+
+.input-group-addon{
+    border: unset !important;
+    vertical-align: middle;
+    margin: auto;
+    margin-left: 10px;
+    border: 1px solid #212121;
+}
+
+a{
+    color: #212121;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #5c4ac7;
+    border: 1px solid #5c4ac7;
+    box-shadow: 0 2px 2px 0 rgb(116 96 238 / 14%), 0 3px 1px -2px rgb(116 96 238 / 20%), 0 1px 5px 0 rgb(116 96 238 / 12%);
+    transition: 0.2s ease-in;
+}
+
+.btn-primary:hover{
+    background: #5c4ac7;
+    -webkit-box-shadow: 0 14px 26px -12px rgb(116 96 238 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(116 96 238 / 20%);
+    box-shadow: 0 14px 26px -12px rgb(116 96 238 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(116 96 238 / 20%);
+    border: 1px solid #5c4ac7;
+}
+
+.btn-secondary{
+    box-shadow: 0 2px 2px 0 rgb(169 169 169 / 14%), 0 3px 1px -2px rgb(169 169 169 / 20%), 0 1px 5px 0 rgb(169 169 169 / 12%);
+    transition: 0.2s ease-in;
+    background-color: #ffffff;
+    color: #67757c;
+    border-color: #b1b8bb;
+}
+
+.btn-secondary:hover{
+    box-shadow: 0 14px 26px -12px rgb(169 169 169 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(169 169 169 / 20%);
+}
+
+.btn-success {
+    background: #26dad2;
+    border: 1px solid #26dad2;
+    box-shadow: 0 2px 2px 0 rgb(40 190 189 / 14%), 0 3px 1px -2px rgb(40 190 189 / 20%), 0 1px 5px 0 rgb(40 190 189 / 12%);
+    transition: 0.2s ease-in;
+}
+
+.btn-success:hover{
+    background: #26dad2;
+    box-shadow: 0 14px 26px -12px rgb(40 190 189 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(40 190 189 / 20%);
+    border: 1px solid #26dad2;
+}
+
+.btn-info{
+    background: #1976d2;
+    border: 1px solid #1976d2;
+    box-shadow: 0 2px 2px 0 rgb(66 165 245 / 14%), 0 3px 1px -2px rgb(66 165 245 / 20%), 0 1px 5px 0 rgb(66 165 245 / 12%);
+    transition: 0.2s ease-in;
+}
+
+.btn-info:hover{
+    background: #1976d2;
+    border: 1px solid #1976d2;
+    box-shadow: 0 14px 26px -12px rgb(23 105 255 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(23 105 255 / 20%);
+}
+
+.btn-warning {
+    background: #ffb22b;
+    color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgb(248 194 0 / 14%), 0 3px 1px -2px rgb(248 194 0 / 20%), 0 1px 5px 0 rgb(248 194 0 / 12%);
+    border: 1px solid #ffb22b;
+    transition: 0.2s ease-in;
+    color: #ffffff;
+}
+
+.btn-warning:hover{
+    background: #ffb22b;
+    color: #ffffff;
+    box-shadow: 0 14px 26px -12px rgb(248 194 0 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(248 194 0 / 20%);
+    border: 1px solid #ffb22b;
+}
+
+.btn-danger{
+    background: #ef5350;
+    border: 1px solid #ef5350;
+    box-shadow: 0 2px 2px 0 rgb(239 83 80 / 14%), 0 3px 1px -2px rgb(239 83 80 / 20%), 0 1px 5px 0 rgb(239 83 80 / 12%);
+    transition: 0.2s ease-in;
+}
+
+.btn-danger:hover{
+    background: #ef5350;
+    box-shadow: 0 14px 26px -12px rgb(239 83 80 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(239 83 80 / 20%);
+    border: 1px solid #ef5350;
 }

@@ -1,0 +1,25 @@
+.button-register{
+    padding-top: 10px;
+    padding-left: 180px;
+}
+
+.register{
+    min-height: 100vh;
+    background-color: #121212;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+.register-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+}
+
+.agreement{
+    padding-top: 5px;
+}
