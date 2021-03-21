@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #455a64;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #67757c;
+
+}
+
 .page{
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 .content-header h3::after{
@@ -45,9 +60,22 @@
     border: 1px solid #212121;
 }
 
+.input-group-text {
+    background-color: unset;
+    border: unset;
+}
+
+.input-group.form-floating>.form-control:focus{
+    z-index: 0;
+}
+
 a{
     color: #212121;
     text-decoration: none;
+}
+
+.btn{
+    padding: 7px 12px;
 }
 
 .btn-primary {
@@ -59,7 +87,6 @@ a{
 
 .btn-primary:hover{
     background: #5c4ac7;
-    -webkit-box-shadow: 0 14px 26px -12px rgb(116 96 238 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(116 96 238 / 20%);
     box-shadow: 0 14px 26px -12px rgb(116 96 238 / 42%), 0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(116 96 238 / 20%);
     border: 1px solid #5c4ac7;
 }

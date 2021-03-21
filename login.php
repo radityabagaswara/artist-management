@@ -16,16 +16,22 @@
 <body>
     <div class="login">
         <div class="container page">
+            <div class="heading-img text-center mb-5">
+                <img class="img-fluid" src="https://cdn.yumereality.id/images/logo/yume-small-w.png" width="300px">
+            </div>
             <form action="login_proses.php" class="login-form" method="post">
                 <div class="content-header text-center mb-5">
                     <h3>Login</h3>
                     <p>Please enter your email and password.</p>
                 </div>
-                <div class="input-group">
+                <div class="input-group form-floating">
                     <input class="form-control" type="text" id="email" placeholder="Email">
+                    <label for="email">Email address</label>
                 </div>
-                <div class="input-group mt-4">
+                <div class="input-group form-floating mt-4">
                     <input class="form-control" type="password" id="pwd" placeholder="Password">
+                    <label for="pwd">Password</label>
+
                     <div class="input-group-addon">
                         <a class="btn-text" onclick='passwordSee()' type="button"><i class="fa fa-eye-slash" id="pwd-icon" aria-hidden="true"></i></a>
                     </div>
@@ -33,8 +39,12 @@
                 <div class="text-end">
                     <a href="">Forgot Password?</a>
                 </div>
-                <div class="button-login">
+                <div class="button-login mt-2">
                     <button class="btn btn-primary">Login</button>
+                </div>
+
+                <div class="form-footer text-center mt-3">
+                    Need help? Please contact an administrator
                 </div>
             </form>
         </div>
